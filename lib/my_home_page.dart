@@ -16,11 +16,18 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("Hello"),
-            Text("Welcome to SengKeng"),
+            Text(
+              "Hello",
+              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
+            ),
+            const SizedBox(height: 20),
+            Text(
+              "Welcome to SengKeng",
+              style: TextStyle(fontSize: 18),
+            ),
           ],
         ),
       ),
-    ); 
+    );
   }
 }
