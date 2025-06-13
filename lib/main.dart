@@ -11,7 +11,15 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: MyHomePage()
+      theme: ThemeData(
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.purple,
+          foregroundColor: Colors.white,
+          elevation: 4,
+          centerTitle: true,
+        ),
+      ),
+      home: const MyHomePage(), // ✅ ใส่ const ถ้าไม่มี state
     );
   }
 }

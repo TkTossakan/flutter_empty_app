@@ -12,8 +12,14 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text("SengKeng")),
-      body: const Center(
-        child: Text("Hello Master of SengKeng"),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Text("Hello"),
+            Text("Welcome to SengKeng"),
+          ],
+        ),
       ),
     ); 
   }
